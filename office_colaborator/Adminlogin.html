@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminLogin</title>
+    <style>
+        .modal{font-family: Arial, Helvetica, sans-serif;}
+
+.topnav {
+    background-color: coral;
+    overflow: hidden;
+}
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .modal{
+    
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+   
+    padding-top: 60px;
+  }
+  span.psw {
+    float: left;
+    padding-top: 16px;
+  }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="#">Admin Login</a>
+
+    </div>
+    <form action="adminlogin.php" method="POST">
+        <div class="modal">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" id="username">
+            <lable for="psw"><b>Password</b></lable>
+            <input type="password" placeholder="Enter Password" name="userpassword" id="userpassword">
+            <button type="submit" name="adminsubmit" id="adminsubmit">Login</button>
+            <span class="psw">if you don't have an account<a href="./signup.html"> Signup</a></span>
+
+        </div>
+    </form>
+
+
+</body>
+
+</html>
